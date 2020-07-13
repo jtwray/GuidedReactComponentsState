@@ -42,7 +42,23 @@ export default function RockPaperScissors(props) {
     const computerWeapon = weapons[Math.floor(Math.random() * 3)]
 
     // 5D- change the state depending on the pair of weapons
-    
+    if (
+      (weapon === rock && computerWeapon === paper) ||
+      (weapon === scissors && computerWeapon === rock) ||
+      (weapon === paper && computerWeapon === scissors)
+    ) {
+      setLosses(losses + 1)
+      setMessage(`You: ${weapon}, Computer: ${computerWeapon}. You Lose Miserably!`)
+    } else if (
+      (weapon === rock && computerWeapon === scissors) ||
+      (weapon === paper && computerWeapon === rock) ||
+      (weapon === scissors && computerWeapon === paper)
+    ) {
+      setWins(wins + 1)
+      setMessage(`You: ${weapon}, Computer: ${computerWeapon}. You Win!!!!!`)
+    } else {
+      setMessage(`You: ${weapon}, Computer: ${computerWeapon}. It's a tie!!!!`)
+    }
   }
 
   return (
