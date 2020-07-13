@@ -38,8 +38,6 @@ render(
   - We interpolate attribute values and content
 */
 
-const foo = "Tim"
-
 function Greet(props) { // takes data => returns elements
   return (
     <div id='firstReactApp' className="greet">Hello World! My name is {props.name}</div>
