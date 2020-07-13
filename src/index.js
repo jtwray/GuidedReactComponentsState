@@ -21,7 +21,7 @@ import LightBulb from '@ladrillo/lightbulb' // just a component
 
 // react comes with a component called 'div'
 render(
-  <Greet />,
+  <Greet name='Tim' />,
   document.getElementById("helloWorld")
 )
 
@@ -38,11 +38,11 @@ render(
   - We interpolate attribute values and content
 */
 
-const name = "Tim"
+const foo = "Tim"
+
 function Greet(props) { // takes data => returns elements
   return (
-    // jsx is the html-like syntax
-    <div id='firstReactApp' className="greet">Hello World! My name is {name}</div>
+    <div id='firstReactApp' className="greet">Hello World! My name is {props.name}</div>
   )
 }
 
