@@ -32,9 +32,12 @@ export default function RockPaperScissors(props) {
     // ⛔⛔⛔ DO NOT MUTATE STATE, EVER! PROVIDE A NEW ONE ⛔⛔⛔
 
     // 5A- Update the round count
+    setRound(round + 1)
 
     // 5B- Pull out which weapon the user selected from the event.target
     // this is the player weapon
+    const weapon = event.target.name
+    console.log(weapon)
 
     // 5C- this is the computer weapon (random number either 0 or 1 or 2)
     const computer = weapons[Math.floor(Math.random() * 3)]
