@@ -77,3 +77,4 @@ function Counter(props) {
 // 💥💥💥 TASK 2: render the RockPaperScissors to div#rockPaperScissors
 // RockPaperScissors expects a 'player' prop
 // Work on the RockPaperScissors component
+render(<RockPaperScissors />, document.querySelector('#rockPaperScissors'))
