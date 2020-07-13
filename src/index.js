@@ -10,7 +10,7 @@ import RockPaperScissors from './components/RockPaperScissors'
 
 // 👉 Importing a React component from node modules (a lib component)
 // @ladrillo/lightbulb is a component that takes `size` (number), `color` (string) and `on` (boolean)
-import LightBulb from '@ladrillo/lightbulb'
+import LightBulb from '@ladrillo/lightbulb' // just a component
 
 /*
 💥💥💥 TASK 1A- Mounting a React element to the DOM (often only once per app) 💥💥💥
@@ -18,7 +18,10 @@ import LightBulb from '@ladrillo/lightbulb'
   👉 1st ARG - React element (or React component "invoked")
   👉 2nd ARG - DOM element to append to
 */
-render(<LightBulb />, document.getElementById("helloWorld"))
+render(
+  <LightBulb on color='crimson' />,
+  document.getElementById("helloWorld")
+)
 
 /*
 💥💥💥 TASK 1B- Example of a React component `Greet` being DECLARED 💥💥💥
