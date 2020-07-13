@@ -48,7 +48,7 @@ export default function RockPaperScissors(props) {
       (weapon === paper && computerWeapon === scissors)
     ) {
       setLosses(losses + 1)
-      setMessage(`You: ${weapon}, Computer: ${computerWeapon}. You Lose Miserably!`)
+      setMessage(`You: ${weapon}, Computer: ${computerWeapon}. You Lose!`)
     } else if (
       (weapon === rock && computerWeapon === scissors) ||
       (weapon === paper && computerWeapon === rock) ||
