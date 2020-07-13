@@ -6,10 +6,11 @@ import { render } from 'react-dom'
 
 // 👉 Importing a React component from another file
 // RockPaperScissors
+import RockPaperScissors from './components/RockPaperScissors'
 
 // 👉 Importing a React component from node modules (a lib component)
 // @ladrillo/lightbulb is a component that takes `size` (number), `color` (string) and `on` (boolean)
-
+import LightBulb from '@ladrillo/lightbulb'
 
 /*
 💥💥💥 TASK 1A- Mounting a React element to the DOM (often only once per app) 💥💥💥
