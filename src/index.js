@@ -45,7 +45,7 @@ function Greet(props) { // takes data => returns elements
   return (
     <div id={id} className="greet">
       <div>Hello World! My name is {props.fname} {props.lname}</div>
-
+      <Counter setCount={setCount} count={count} />
     </div>
   )
 }
