@@ -1,6 +1,6 @@
 // 👉 Importing React libs from node_modules folder (see package.json)
 // to make React components
-import React from 'react'
+import React, { useState } from 'react'
 // to append a React tree of components to the DOM
 import { render } from 'react-dom'
 
@@ -39,6 +39,8 @@ render(
 */
 
 function Greet(props) { // takes data => returns elements
+  const [count, setCount] = useState(0) // useState returns an array
+
   const id = 'firstReactApp'
   return (
     <div id={id} className="greet">
