@@ -54,7 +54,7 @@ export default function RockPaperScissors(props) {
 
       <div className='buttons'>
         <h3>Choose wisely:</h3>
-        <div>
+        <div onClick={play}>
           <button name={rock}>{rock}</button>
           <button name={paper}>{paper}</button>
           <button name={scissors}>{scissors}</button>
