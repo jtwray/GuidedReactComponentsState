@@ -1,4 +1,5 @@
 // 👉 Importing React libs from node_modules folder (see package.json)
+import React from 'react'
 // to make React components
 // to append a React tree of components to the DOM
 
