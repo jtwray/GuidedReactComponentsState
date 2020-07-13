@@ -37,7 +37,7 @@ render(
   - We can INTERPOLATE 🔥 js expressions 🔥 using curly braces
   - We interpolate attribute values and content
 */
-``
+
 const name = "Tim"
 function Greet(props) { // takes data => returns elements
   return (
