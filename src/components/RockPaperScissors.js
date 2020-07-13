@@ -10,14 +10,14 @@ const [rock, paper, scissors] = weapons
 
 export default function RockPaperScissors(props) {
   // 1- 👉👉👉 CREATE SLICES OF APPLICATION STATE (USING TOP-LEVEL COMPONENT STATE)
-``
+
   // We need several slices of component state, to keep track of the general state of the app:
   //   - the `round` number about to be played, initialize at 1
-  const [round, setRound] = useState(1)
+  const [round, setRound] = useState(100)
   //   - the number of 'wins', initialize at number 0
-  const [wins, setWins] = useState(0)
+  const [wins, setWins] = useState(95)
   //   - the number of 'losses', initialize at number 0
-  const [losses, setLosses] = useState(0)
+  const [losses, setLosses] = useState(2)
   //   - the 'message' displayed on the screen, initialize at string 'Fight!'
   const [message, setMessage] = useState('Fight')
 
@@ -47,9 +47,9 @@ export default function RockPaperScissors(props) {
       {/* Replace hard-coded round using props */}
       <div className='player'>Welcome, Ava</div>
       {/* Replace hard-coded round using state */}
-      <h2>Round: 1</h2>
+      <h2>Round: {round}</h2>
       {/* Replace hard-coded stats using state */}
-      <h3>won: 0 | lost: 0 | tied: 0</h3>
+      <h3>won: {wins} | lost: {losses} | tied: {round - 1 - (wins + losses)}</h3>
       <h1 className='message'>Fight!</h1>
 
       <div className='buttons'>
