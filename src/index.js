@@ -18,7 +18,7 @@ import LightBulb from '@ladrillo/lightbulb'
   👉 1st ARG - React element (or React component "invoked")
   👉 2nd ARG - DOM element to append to
 */
-
+render(<LightBulb />, document.getElementById("helloWorld"))
 
 /*
 💥💥💥 TASK 1B- Example of a React component `Greet` being DECLARED 💥💥💥
