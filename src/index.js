@@ -21,7 +21,7 @@ import LightBulb from '@ladrillo/lightbulb' // just a component
 
 // react comes with a component called 'div'
 render(
-  <Greet name='Tim' />,
+  <Greet fname='Tim' lname='Smith' />,
   document.getElementById("helloWorld")
 )
 
@@ -39,8 +39,13 @@ render(
 */
 
 function Greet(props) { // takes data => returns elements
+  const id = 'firstReactApp'
   return (
-    <div id='firstReactApp' className="greet">Hello World! My name is {props.name}</div>
+    <div id={id} className="greet">
+      <div>Hello World! My name is {props.fname} {props.lname}</div>
+      <div>The count is 0</div>
+      <button>increase count</button>
+    </div>
   )
 }
 
