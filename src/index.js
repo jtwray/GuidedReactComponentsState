@@ -45,7 +45,7 @@ function Greet(props) { // takes data => returns elements
   return (
     <div id={id} className="greet">
       <div>Hello World! My name is {props.fname} {props.lname}</div>
-      <Counter setCount={setCount} count={count} />
+      <Counter countChanger={setCount} currentCount={count} />
     </div>
   )
 }
@@ -53,8 +53,8 @@ function Greet(props) { // takes data => returns elements
 function Counter(props) {
   return (
     <div>
-      <div>The count is {props.count}</div>
-      <button onClick={() => props.setCount(props.count + 1)}>increase count</button>
+      <div>The count is {props.currentCount}</div>
+      <button onClick={() => props.countChanger(props.currentCount + 1)}>increase count</button>
     </div>
   )
 }
