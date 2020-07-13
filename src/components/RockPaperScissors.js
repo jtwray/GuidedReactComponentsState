@@ -13,13 +13,13 @@ export default function RockPaperScissors(props) {
 
   // We need several slices of component state, to keep track of the general state of the app:
   //   - the `round` number about to be played, initialize at 1
-  const [round, setRound] = useState(100)
+  const [round, setRound] = useState(1)
   //   - the number of 'wins', initialize at number 0
-  const [wins, setWins] = useState(95)
+  const [wins, setWins] = useState(0)
   //   - the number of 'losses', initialize at number 0
-  const [losses, setLosses] = useState(2)
+  const [losses, setLosses] = useState(0)
   //   - the 'message' displayed on the screen, initialize at string 'Fight!'
-  const [message, setMessage] = useState('Fight')
+  const [message, setMessage] = useState('About to fight!!')
 
   // 2- 👉👉👉 We DO NOT need a slice for rounds tied, as we can calculate that info using other slices
   // 3- 👉👉👉 REPLACE DOWN IN THE JSX THE HARD CODED PIECES OF DATA WITH PIECES OF STATE OR PROPS
@@ -50,7 +50,7 @@ export default function RockPaperScissors(props) {
       <h2>Round: {round}</h2>
       {/* Replace hard-coded stats using state */}
       <h3>won: {wins} | lost: {losses} | tied: {round - 1 - (wins + losses)}</h3>
-      <h1 className='message'>Fight!</h1>
+      <h1 className='message'>{message}</h1>
 
       <div className='buttons'>
         <h3>Choose wisely:</h3>
