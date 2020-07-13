@@ -37,12 +37,12 @@ export default function RockPaperScissors(props) {
     // 5B- Pull out which weapon the user selected from the event.target
     // this is the player weapon
     const weapon = event.target.name
-    console.log(weapon)
 
     // 5C- this is the computer weapon (random number either 0 or 1 or 2)
-    const computer = weapons[Math.floor(Math.random() * 3)]
+    const computerWeapon = weapons[Math.floor(Math.random() * 3)]
 
     // 5D- change the state depending on the pair of weapons
+    
   }
 
   return (
