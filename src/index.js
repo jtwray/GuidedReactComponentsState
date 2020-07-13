@@ -18,8 +18,10 @@ import LightBulb from '@ladrillo/lightbulb' // just a component
   👉 1st ARG - React element (or React component "invoked")
   👉 2nd ARG - DOM element to append to
 */
+
+// react comes with a component called 'div'
 render(
-  <LightBulb on color='crimson' />,
+  <Greet />,
   document.getElementById("helloWorld")
 )
 
@@ -35,7 +37,7 @@ render(
   - We can INTERPOLATE 🔥 js expressions 🔥 using curly braces
   - We interpolate attribute values and content
 */
-function Greet() { // takes data => returns elements
+function Greet(props) { // takes data => returns elements
 
 }
 
