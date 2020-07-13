@@ -37,8 +37,13 @@ render(
   - We can INTERPOLATE 🔥 js expressions 🔥 using curly braces
   - We interpolate attribute values and content
 */
+``
+const name = "Tim"
 function Greet(props) { // takes data => returns elements
-
+  return (
+    // jsx is the html-like syntax
+    <div id='firstReactApp' className="greet">Hello World! My name is {name}</div>
+  )
 }
 
 
