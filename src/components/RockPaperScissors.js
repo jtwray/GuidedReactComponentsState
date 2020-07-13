@@ -1,5 +1,5 @@
 // We need the state hook
-import React from 'react'
+import React, { useState } from 'react'
 
 // These constants could live in another module
 const weapons = ['🗿', '📜', '✂️']
@@ -10,12 +10,16 @@ const [rock, paper, scissors] = weapons
 
 export default function RockPaperScissors(props) {
   // 1- 👉👉👉 CREATE SLICES OF APPLICATION STATE (USING TOP-LEVEL COMPONENT STATE)
-
+``
   // We need several slices of component state, to keep track of the general state of the app:
   //   - the `round` number about to be played, initialize at 1
+  const [round, setRound] = useState(1)
   //   - the number of 'wins', initialize at number 0
+  const [wins, setWins] = useState(0)
   //   - the number of 'losses', initialize at number 0
+  const [losses, setLosses] = useState(0)
   //   - the 'message' displayed on the screen, initialize at string 'Fight!'
+  const [message, setMessage] = useState('Fight')
 
   // 2- 👉👉👉 We DO NOT need a slice for rounds tied, as we can calculate that info using other slices
   // 3- 👉👉👉 REPLACE DOWN IN THE JSX THE HARD CODED PIECES OF DATA WITH PIECES OF STATE OR PROPS
