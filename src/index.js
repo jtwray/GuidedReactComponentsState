@@ -46,7 +46,7 @@ function Greet(props) { // takes data => returns elements
     <div id={id} className="greet">
       <div>Hello World! My name is {props.fname} {props.lname}</div>
       <div>The count is {count}</div>
-      <button onClick={evt => setCount(count + 1)}>increase count</button>
+      <button onClick={() => setCount(count + 1)}>increase count</button>
     </div>
   )
 }
